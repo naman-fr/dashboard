@@ -23,26 +23,7 @@ This project visualizes live data updates, detects anomalies using moving averag
 
 ## 🗂️ Project Structure
 
-dashboard/
-├── app.py                    # 🔷 Main application entry point
-├── assets/
-│   └── custom.css            # 🎨 Custom styles for UI
-├── config/
-│   └── settings.json         # ⚙️ Configurable settings for refresh rate, port, etc.
-├── components/
-│   ├── figures.py            # 📊 Generates graphs and plots
-│   ├── layouts.py            # 🧩 Layout and UI structure
-│   └── __pycache__/          # 🗂️ Python cache files
-├── data/
-│   ├── fetching.py           # 🔄 Simulates real-time data fetching
-│   ├── processing.py         # 🧠 Anomaly detection, moving averages
-│   └── __pycache__/          # 🗂️ Python cache files
-├── models/
-│   ├── forecasting.py        # 🔮 Linear regression for future value prediction
-│   └── __pycache__/          # 🗂️ Python cache files
-└── README.md                 # 📘 Project documentation (this file)
-
-
+<pre> ``` dashboard/ ├── app.py # Main application entry point ├── assets/ │ └── custom.css # Custom styles for UI ├── config/ │ └── settings.json # Configurable settings for refresh rate, port, etc. ├── components/ │ ├── figures.py # Generates graphs and plots │ ├── layouts.py # Layout and UI structure │ └── __pycache__/ # Python cache files ├── data/ │ ├── fetching.py # Simulates real-time data fetching │ ├── processing.py # Anomaly detection, moving averages │ └── __pycache__/ # Python cache files ├── models/ │ ├── forecasting.py # Linear regression for future value prediction │ └── __pycache__/ # Python cache files └── README.md # Project documentation ``` </pre>
 ---
 
 ## 🧠 Data Science Enhancements
