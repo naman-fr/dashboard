@@ -23,7 +23,25 @@ This project visualizes live data updates, detects anomalies using moving averag
 
 ## 🗂️ Project Structure
 
-dashboard/ ├── app.py # Main Dash application ├── config/ │ └── settings.json # Adjustable settings (interval, forecast size, etc.) ├── assets/ │ └── custom.css # Custom CSS for improved visuals ├── components/ │ ├── figures.py # All graphs & visuals │ └── layouts.py # Page layout components ├── data/ │ ├── fetching.py # Real-time data simulation │ └── processing.py # Moving averages & anomaly logic └── models/ └── forecasting.py # Forecasting using linear regression
+dashboard/
+├── app.py                    # 🔷 Main application entry point
+├── assets/
+│   └── custom.css            # 🎨 Custom styles for UI
+├── config/
+│   └── settings.json         # ⚙️ Configurable settings for refresh rate, port, etc.
+├── components/
+│   ├── figures.py            # 📊 Generates graphs and plots
+│   ├── layouts.py            # 🧩 Layout and UI structure
+│   └── __pycache__/          # 🗂️ Python cache files
+├── data/
+│   ├── fetching.py           # 🔄 Simulates real-time data fetching
+│   ├── processing.py         # 🧠 Anomaly detection, moving averages
+│   └── __pycache__/          # 🗂️ Python cache files
+├── models/
+│   ├── forecasting.py        # 🔮 Linear regression for future value prediction
+│   └── __pycache__/          # 🗂️ Python cache files
+└── README.md                 # 📘 Project documentation (this file)
+
 
 ---
 
