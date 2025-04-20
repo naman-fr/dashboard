@@ -14,13 +14,18 @@ This project visualizes live data updates, detects anomalies using moving averag
 
 - ✅ Real-time data visualization
 - 📈 Anomaly detection using z-scores
-- 🔮 Forecasting via linear regression
-- 🎨 Modern, clean UI (Bootstrap + Custom CSS)
+- 🔮 Forecasting via linear regression and LSTM neural networks
+- 📄 New "About Project" page explaining data analytics and project details for users unfamiliar with the project
+- 🎨 Modern, clean UI with enhanced responsiveness, colors, spacing, and interactive effects (Bootstrap + Custom CSS)
 - 🧱 Modular codebase with scalability in mind
 - 🧪 Simulated live data engine for demo purposes
-  
-🗂️ Project Structure
-<pre> ``` dashboard/
+
+---
+
+## 🗂️ Project Structure
+
+``` 
+dashboard/
 ├── app.py                    # 🔷 Main application entry point
 ├── assets/
 │   └── custom.css            # 🎨 Custom styles for UI
@@ -28,24 +33,27 @@ This project visualizes live data updates, detects anomalies using moving averag
 │   └── settings.json         # ⚙️ Configurable settings for refresh rate, port, etc.
 ├── components/
 │   ├── figures.py            # 📊 Generates graphs and plots
-│   ├── layouts.py            # 🧩 Layout and UI structure
+│   ├── layouts.py            # 🧩 Layout and UI structure, including new About Project tab
 │   └── __pycache__/          # 🗂️ Python cache files
 ├── data/
 │   ├── fetching.py           # 🔄 Simulates real-time data fetching
 │   ├── processing.py         # 🧠 Anomaly detection, moving averages
 │   └── __pycache__/          # 🗂️ Python cache files
 ├── models/
-│   ├── forecasting.py        # 🔮 Linear regression for future value prediction
+│   ├── forecasting.py        # 🔮 Linear regression and LSTM for future value prediction
 │   └── __pycache__/          # 🗂️ Python cache files
 └── README.md                 # 📘 Project documentation (this file)
- ``` </pre>
+```
+
+---
 
 ## 🧠 Data Science Enhancements
 
 - **Rolling Average**: Smooths time series to detect trends.
 - **Z-Score Anomaly Detection**: Flags statistically deviant points.
-- **Forecasting**: Linear regression model predicts future values.
-- **User Controls**: Interactive sliders for forecast size, manual refresh button, and tab switching.
+- **Forecasting**: Linear regression and LSTM neural network models predict future values.
+- **User Controls**: Interactive sliders for forecast size, anomaly threshold, data source selection, and tab switching.
+- **New About Page**: Provides a detailed explanation of the data analytics implemented and project purpose for new users.
 
 ---
 
@@ -64,3 +72,35 @@ venv\Scripts\activate         # On Windows
 # source venv/bin/activate    # On macOS/Linux
 
 pip install -r requirements.txt
+```
+
+---
+
+## 🚀 Running the App
+
+Run the dashboard app with:
+
+```bash
+python app.py
+```
+
+Then open your browser and navigate to `http://localhost:8050` to view the dashboard.
+
+Navigate through the tabs to explore real-time analysis, forecasting, and the new About Project page.
+
+---
+
+## 🎨 UI Improvements
+
+The user interface has been enhanced with:
+
+- Improved responsiveness for different screen sizes
+- Better color scheme and contrast
+- Smooth transitions and hover effects on interactive elements
+- Accessibility improvements with aria labels on controls
+
+---
+
+## 🤝 Contribution
+
+Contributions and feedback are welcome to further improve this dashboard project.
