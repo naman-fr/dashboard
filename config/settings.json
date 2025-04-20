@@ -1,0 +1,8 @@
+{
+    "update_interval": 10000,
+    "default_port": 8050,
+    "debug": false,
+    "app_title": "Real-Time Data & Analytics Dashboard",
+    "forecast_horizon": 5
+  }
+  
